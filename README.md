@@ -1,3 +1,3 @@
 # game_server
 
-A very Basic Echo Server.
+A very basic Echo Server.
