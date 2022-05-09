@@ -20,7 +20,7 @@ async def echo(websocket, path):
 
 
 async def main():
-    async with serve(echo, "", 8080):  # Hostname must be empty or it won't work
+    async with serve(echo, "", 6969):  # Hostname must be empty or it won't work
         await asyncio.Future()  # run forever
 
 asyncio.run(main())
