@@ -14,8 +14,8 @@ async def echo(websocket, path):
         async for message in websocket:
             for conn in connected:
                 await conn.send(message)
-            print(message)
-    except:
+            print("RECIEVED MESSAGE: " + message)
+    finally:  # Cannot be Except, or the server is not going to work after a client disconnected
         connected.remove(websocket)
 
 
