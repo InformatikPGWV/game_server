@@ -1,7 +1,14 @@
 # Very Basic Echo Server
 
-import asyncio
-from websockets import serve
+try:
+    import asyncio
+    from websockets import serve
+except:
+    import subprocess
+    import asyncio
+
+    subprocess.call("pip install -r requirements.txt", shell=True)
+    from websockets import serve
 
 
 connected = set()
