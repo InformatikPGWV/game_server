@@ -1,3 +1,3 @@
 # game_server
 
-A simple WebSockets server.
+A very Basic Echo Server.

@@ -1,10 +1,8 @@
-# Simple Echo Server
-
-# TODO:
-# - add Broadcast functionality
+# Very Basic Echo Server
 
 import asyncio
 from websockets import serve
+
 
 connected = set()
 
@@ -22,7 +20,7 @@ async def echo(websocket, path):
 
 
 async def main():
-    async with serve(echo, "", 8080):
+    async with serve(echo, "", 8080):  # Hostname must be empty or it won't work
         await asyncio.Future()  # run forever
 
 asyncio.run(main())
