@@ -5,9 +5,9 @@ try:
     from websockets import serve
 except:
     import subprocess
-    import asyncio
-
     subprocess.call("pip install -r requirements.txt", shell=True)
+
+    import asyncio
     from websockets import serve
 
 
