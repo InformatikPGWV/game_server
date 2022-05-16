@@ -22,6 +22,5 @@
         // Ab Hier Protokoll nach Spiel
     }
 ]
-
 ```
 
