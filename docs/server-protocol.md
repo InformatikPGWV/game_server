@@ -17,6 +17,7 @@
 [
     "sender":"server|clientP1|clientP2",
     "receiver":"server|clientP1|clientP2",
+    "game":"pong|...",
     "timestamp":"timestamp in Unix millis",
     "data": {
         // Ab Hier Protokoll nach Spiel
