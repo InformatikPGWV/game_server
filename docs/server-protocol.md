@@ -15,10 +15,10 @@
 
 ```json
 [
-    "sender":"server|clientP1|clientP2",
-    "receiver":"server|clientP1|clientP2",
+    "sender":"server|player1|player2",
+    "receiver":"server|player1|player2",
     "game":"pong|...",
-    "timestamp":"timestamp in Unix millis",
+    "timestamp": /* timestamp in Unix millis */,
     "data": {
         // Ab Hier Protokoll nach Spiel
     }
